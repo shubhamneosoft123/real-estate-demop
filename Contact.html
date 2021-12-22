@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+
+        <style>
+            .error{
+                color: red;
+            }
+        </style>
+    
+</head>
+<body>
+
+    
+    <!-- Header Start -->
+
+    <section class="header">
+        <div>
+            <nav>
+                <a id="brand" href=""><h1 id="brand1">ELIXIR <span id="a1">ESTATES</span></h1></a>
+                <div class="nav-links">
+                    <ul style="font-weight: bold; font-size: 20px;">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li> <a href=""> <i class="fas fa-user"></i></a></li>
+                    </ul>     
+                </div>
+            </nav>
+        </div>
+        
+
+    </section>
+<!-- contact us -->
+    <section id="contact">
+
+
+        <div class="container">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="My_photo/contactus.png" style="width:80%">
+              </div>
+              <div class="column">
+
+                <form action="success.html"  onsubmit="return validateForm()"   novalidate> <!-- novalidate : to stop browser's implicit validation-->
+                    <table>
+                       <tr><td> <label for="fname">First Name:</label></td><br>
+                            <td><input type="text" id="fname" placeholder="Enter your First Name" onblur="validate1()"></td></tr>
+                        <tr><td></td><td id="error1" class="error"></td></tr>
+                        <tr><td><label for="lname">Last Name:</label></td><br>
+                            <td><input type="text" id="lname" placeholder="Enter your Last Name" onblur="validate2()"></td></tr>
+                        <tr><td></td><td id="error2" class="error"></td></tr>
+                        <tr><td><label for="email">Email Id:</label></td>
+                            <td><input type="email" id="email" placeholder="Enter your Email Id" onblur="validate6()"></td></tr>
+                        <tr><td></td><td id="error6" class="error"></td></tr>    
+                        <tr><td><label for="mobile">Mobile number:</label></td>  
+                            <td><input type="text" id="mobile" placeholder="Enter your Mobile No" onblur="validate7()"></td></tr> 
+                        <tr><td></td><td id="error7" class="error"></td></tr>
+                        <tr><td></td><td></td></tr> 
+                        
+                                
+                    </table>
+                    <div style="text-align: center;">
+                        <input type="submit" value="SUBMIT">
+                        <input onclick="myFunction()" type="reset">
+                    </div>
+                    </form>
+                
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <!--  FOOTER START -->
+        
+    <div class="footer">
+        <div class="inner-footer">
+      
+      <!--  for company name and description -->
+          <div class="footer-items">
+            <h1 >ELIXIR</h1>
+            <p>Property Dealing and Sell .</p>
+            <p>Since 2005</p>
+          </div>
+      
+      <!--  for quick links  -->
+          <div class="footer-items">
+            <h3 class="hc">Quick Links</h3>
+            <div class="border1"></div> <!--for the underline -->
+              <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="#service"><li>Services</li></a>
+                <a href="Contact.html"><li>Contact</li></a>
+                <a href="#about"><li>About</li></a>
+              </ul>
+          </div>
+      
+      <!--  for some other links -->
+          <div class="footer-items">
+            <h3 class="hc" >What We Sell</h3>
+            <div class="border1"></div>  <!--for the underline -->
+              <ul>
+                <a href="#properties"><li>Flats</li></a>
+                <a href="#properties"><li>Banglow</li></a>
+                <a href="#properties"><li>Row House</li></a>
+                <a href="#properties"><li>Commercial Buldings</li></a>
+              </ul>
+          </div>
+      
+      <!--  for contact us info -->
+          <div class="footer-items">
+            <h3  class="hc">Contact us</h3>
+            <div class="border1"></div>
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Pune , Maharashtra</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>9876543210</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>elixir@gmail.com</li>
+              </ul> 
+            
+      <!--   for social links -->
+             
+          </div>
+        </div>
+        <h3 style="text-align: center; color: #e74c3c;">FOLLO US</h3>
+        <div class="social-media">
+            <a href="#"><i style="color: rgb(56, 159, 228);" class="fab fa-linkedin"></i></a>
+            <a  href="#"><i style="color: rgb(228, 56, 113);" class="fab fa-instagram"></i></a>
+            <a href="#"><i style="color: rgb(56, 116, 228);" class="fab fa-facebook"></i></a>
+            <a href="#"><i style="color: rgb(228, 105, 56);" class="fab fa-google-plus-square"></i></a>
+            <a href="#"><i style="color: rgb(136, 56, 228);" class="fab fa-twitter-square"></i></a>
+          </div> 
+        <hr>
+      <!--   Footer Bottom start  -->
+        <div class="footer-bottom">
+          Copyright &copy; Elixir Estates 2021.
+        </div>
+      </div>
+        
+      <!--   Footer Bottom end -->
+        
+      <!--   FOOTER END -->
+        
+      </body>  
+      
+      <!-- Thanks to Computer Conversations -->
+   <!--Footer End  -->
+
+
+    
+ <a href="javascript:void(0)" class="gotop">
+     <i class="fa fa-chevron-up"></i>
+ </a>    
+    
+    
+
+    <script src="validate.js"></script>
+      
+   
+    
+</body>
+</html>
